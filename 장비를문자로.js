@@ -1,0 +1,1 @@
+javascript:(function() { gear = document.getElementsByTagName('td'); for (let i=0; i<gear.length; i++) { if (gear[i].getAttribute('gnm')) { gearName = gear[i].getAttribute('gnm').split(/\s/)[0]; if (gearName.length) { gear[i].innerText = gearName; } else { gear[i].innerText = "H+"; } } } })();
