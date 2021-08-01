@@ -1,7 +1,7 @@
 javascript:(async function(){
     var itemArray = [];
     for (let i=1;;i++) {
-        var data = await jQuery.get('https://ya9.naver.com/item/itemlist.nhn?itemCatg=&currentPage='+i);
+        var data = await jQuery.get('https://ya9.hangame.com/item/itemlist.nhn?itemCatg=&currentPage='+i);
         var html = new DOMParser().parseFromString(data,'text/html');
         for (let j=1;j<9;j++) {
             var itemData = html.getElementById('item_list_li' + j);
