@@ -19,7 +19,7 @@ javascript:(function(){
                     }
                     break;
                 case "B":
-                    var data = await jQuery.getJSON('https://ya9.naver.com/gmc/ischeckchallenge.nhn');
+                    var data = await jQuery.getJSON('https://ya9.hangame.com/gmc/ischeckchallenge.nhn');
                     if (data.running) {
                         console.log("경기 중");
                     } else {
