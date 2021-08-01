@@ -2,7 +2,7 @@ javascript:(async function() {
     var newsList = Array.from(document.getElementsByClassName('lst_scroll')[0].getElementsByTagName('tr'));
     for (news of newsList) {
         if (news.innerText.match(/사이클링|노히트노런|퍼펙트/)) {
-            var json = await jQuery.getJSON('https://ya9.haangame.com/gmc/newsreward.nhn?nno='+news.className.replace(/[^0-9]/g,""));
+            var json = await jQuery.getJSON('https://ya9.hangame.com/gmc/newsreward.nhn?nno='+news.className.replace(/[^0-9]/g,""));
             if (json.result == 0) {
                 console.log(json.combined_action_content);
             } else if (json.result == -1) {
